@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block title%}
+<title>
+   {%if title%} 
+        {{title}}
+    {% else%}
+        home
+    {% endif %}
+	</title>
+{%endblock title%}
+
+{% block body%}
+
+<h2>Home Page</h2>
+<p>Welcome back, {{ username }}!</p>
+
+{%endblock body%}
